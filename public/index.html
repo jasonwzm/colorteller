@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorTeller</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Color<span>Teller</span></h1>
+    </header>
+    
+    <main>
+      <div id="color-display">
+        <div id="color-box"></div>
+        <div id="color-info">
+          <h2 id="color-name">Loading...</h2>
+        </div>
+      </div>
+      
+      <div class="region-container">
+        <label for="region-select">Select Region:</label>
+        <select id="region-select">
+          <option value="us-west1" selected>us-west1</option>
+          <option value="us-east1">us-east1</option>
+          <option value="Rest of Regions">Rest of Regions</option>
+        </select>
+      </div>
+      
+      <div class="refresh-container">
+        <button id="refresh-btn">Refresh Color</button>
+      </div>
+    </main>
+    
+    <footer>
+      <p>Powered by Statsig</p>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html> 
